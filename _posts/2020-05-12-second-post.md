@@ -23,5 +23,4 @@ class BaseballPlayer(Base):
     birth_day = Column(Integer)
     birth_country = Column(String)
     birth_state = Column(String)
-    ...
  ```
