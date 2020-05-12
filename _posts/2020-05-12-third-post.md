@@ -10,7 +10,7 @@ categories: writing
 3. thesis statement : at the last part of introduction, include thesis statement.
 
 ## Body (to support thesis statement)
-### by having at least 3 Topic Sentence (state topic and controlling idea)
+### by having at least 3 Topic Sentences (state topic and controlling idea)
 ### each topic sentences has 3 supporting idea, and each supporting idea has following sentence with more details and examples
 
 Supporting Idea #1
