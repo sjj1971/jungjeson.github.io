@@ -24,3 +24,8 @@ class BaseballPlayer(Base):
     birth_country = Column(String)
     birth_state = Column(String)
  ```
+3. Create Database Connection
+example data path = "../Resources/database.sqlite"
+```
+engine = create_engine('sqlite:///{data_path}')
+Base.metadata.create_all(engine)
