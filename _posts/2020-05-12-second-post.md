@@ -13,7 +13,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 ```
 2. Define class for table inheriting Base class.
-   here, BaseballPlayer is class name and table name will be "player" 
+   Here, "BaseballPlayer" is class name and table name will be "player" 
 ```python
 class BaseballPlayer(Base):
     __tablename__ = "player"
