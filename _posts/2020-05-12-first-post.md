@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Jekyll!"
 date: 2020-05-12 14:31:00 -0400
-categories: jekyll update
+categories: programming
 ---
 You’ll find this post in your `_posts` directory.
 Go ahead and edit it and re-build the site to see your changes.
