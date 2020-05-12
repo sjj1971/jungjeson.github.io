@@ -12,3 +12,16 @@ from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 ```
+2. Define class for table inheriting Base class.
+   here, BaseballPlayer is class name and table name will be "player" 
+```python
+class BaseballPlayer(Base):
+    __tablename__ = "player"
+    player_id = Column(String, primary_key=True)
+    birth_year = Column(Integer)
+    birth_month = Column(Integer)
+    birth_day = Column(Integer)
+    birth_country = Column(String)
+    birth_state = Column(String)
+    ...
+ ```
