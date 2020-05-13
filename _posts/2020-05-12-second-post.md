@@ -20,7 +20,7 @@ employees_df = pd.read_sql("select * from employees, connection)
 ```
 
 ## How to make SQL Data Base using SQLalchemy
-1. Load SQLalchemy package
+#### 1. Load SQLalchemy package
 
 ```python
 # Imports the method used for connecting to DBs
@@ -35,10 +35,10 @@ from sqlalchemy import Column, Integer, String, Float from sqlalchemy import cre
 # Sets an object to utilize the default declarative base in SQL Alchemy
 Base = declarative_base()
 ```
-2. Create Classes which will serve as the anchor points for our tables.
-   Here, "BaseballPlayer" is class name and "player" is table name. 
-   
+#### 2. Create Classes which will serve as the anchor points for our tables.
+     
 ```python
+# Here, "BaseballPlayer" is class name and "player" is table name. 
 class BaseballPlayer(Base):
     __tablename__ = "player"
     player_id = Column(String, primary_key=True)
@@ -52,7 +52,7 @@ class BaseballPlayer(Base):
  player1 = BaseballPlayer("birth_year" = "...", ...)
  ```
 
-3. Create Database Connection & create sql file
+#### 3. Create Database Connection & create sql file
 
 ```python
 data_path = "../Resources/database.sqlite"
@@ -64,14 +64,14 @@ Base.metadata.create_all(engine)
 # When clear out the db : Base.metadata.drop_all(engine)
 ```
 
-4. Create a session object to connect to DB
+#### 4. Create a session object to connect to DB
 
 ```python
 from sqlalchemy.orm import Session
 session = Session(bind=engine)
 ```
 
-5. Add record to the DB
+#### 5. Add record to the DB
 
 ```python
 # add record
@@ -81,7 +81,7 @@ session.new
 session.commit
 ```
 
-6. Query the table
+#### 6. Query the table
 
 ```python
 session.query(Dog.column).all()
