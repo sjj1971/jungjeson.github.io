@@ -26,6 +26,7 @@ class BaseballPlayer(Base):
  ```
 3. Create Database Connection
 example data path = "../Resources/database.sqlite"
-```
+```python
 engine = create_engine('sqlite:///{data_path}')
 Base.metadata.create_all(engine)
+```
