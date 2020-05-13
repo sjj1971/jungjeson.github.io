@@ -135,3 +135,4 @@ inspector.get_table_names()
 columns = inspector.get_columns('dow')
 for column in columns:
     print(column["name"], column["type"])
+```
