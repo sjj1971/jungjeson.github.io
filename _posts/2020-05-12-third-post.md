@@ -55,3 +55,6 @@ move smoothly using transition and key word
 ### 4_ revising: adding more idea or other ideas.
 ### 5_ editing: looking for mistakes (grammar, spelling, or others)
 ### 6_ final draft: follow teacher's instruction and making it perfect
+
+## (5) Sample Essay
+
