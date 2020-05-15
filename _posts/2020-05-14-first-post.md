@@ -7,22 +7,39 @@ Make python file app.py
 ```python
 from flask import Flask, jsonify
 
+justice_league_member = [
+    {"superhero": "Aquaman", "real_name": "Arthur Curry"},
+    {"superhero": "Batman", "real_name": "Bruce Wayne"},
+    {"superhero": "Cyborg", "real_name": "Victor Stone"},
+    {"superhero": "Flash", "real_name": "Barry Allen"},
+    {"superhero": "Green Lantern", "real_name": "Hal Jordan"},
+    {"superhero": "Superman", "real_name": "Clark Kent/Kal-El"},
+    {"superhero": "Wonder Woman", "real_name": "Princess Diana"}
+]
+
 app = Flask(__name__)
-hello_list = ["My name", "My contact", "My message"]
 
 @app.route("/")
 def home():
     print("Server received request for 'Home' page...")
-    return "Welcome to my 'Home' page!"
+    return (
+        f"Welcome to my 'Justice League API' page!"
+        f"/api/v1.0/justice_league<br/>"
+        f"/api/v1.0/justice_league/Hero%20Name<br/>"
 
-@app.route("/about")
-def about():
-    print("Server received request for 'About' page...")
-    return "Welcome to my 'About' page!"
-
-@app.route("/jsonified")
-def jsonified():
-    return jsonify(hello_list)
+@app.route("/api/v1.0/justice_league/")
+def justice_league():
+    print("Server received request for 'justice_league' page...")
+    return jsonify(justice_league_member)
+    
+@app.route("/api/v1.0/justice_league/<hero_name>")
+def justice_league_character(hero_name):
+    canonicalized=hero_name.replace(" ", "").lower()
+    for character in justice_league_member:
+        search_term = character["superhero"].replace(" ","")
+        if search_term = canonicalized:
+            return jsonify(character)
+    return jsonify({"error": f"Hero with name {hero_name} not found."}), 404
     
 if __name__ == "__main__":
     app.run(debug=True)
