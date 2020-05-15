@@ -52,7 +52,7 @@ for column in columns:
 from sqlalchemy import func
 session.query(Dow.id, func.avg(Dow.column_1).filter(column == value).group_by(Dow.id).all()
 ```
-```pythn
+```python
 # using label
 from sqlalchemy import func
 from sqlalchemy.sql import label
