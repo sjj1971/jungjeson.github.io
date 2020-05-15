@@ -1,4 +1,8 @@
-
+---
+title: "SQLAlchemy Note - part2"
+date: 2020-05-15 15:00:00
+categories: programming
+---
 ## Reflection using SQLalchemy
 ```python
 # reflection is to reflect the database tables to Base class
@@ -40,4 +44,10 @@ inspector.get_table_names()
 columns = inspector.get_columns('dow')
 for column in columns:
     print(column["name"], column["type"])
+```
+
+## Additional method to use aggregation function query using SQLAlchemy
+```python
+# The format of instruction for aggregation using SQLAlchemy is similar to one of SQL.
+session.query(Dow.id, func.avg(Dow.column_1).filter(column == value).group_by(Dow.id).all()
 ```
