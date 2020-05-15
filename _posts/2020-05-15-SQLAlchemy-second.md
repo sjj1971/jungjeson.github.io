@@ -49,5 +49,16 @@ for column in columns:
 ## Additional method to use aggregation function query using SQLAlchemy
 ```python
 # The format of instruction for aggregation using SQLAlchemy is similar to one of SQL.
+from sqlalchemy import func
 session.query(Dow.id, func.avg(Dow.column_1).filter(column == value).group_by(Dow.id).all()
+```
+```pythn
+# using label
+from sqlalchemy import func
+from sqlalchemy.sql import label
+results = session.query(User.group,
+          label('members', func.count(User.id)),
+          label('total_balance', func.sum(User.balance))).group_by(User.group).all()
+for result in results:
+    print(f"{result.group}, {result.members}, {result.total_balance}")
 ```
