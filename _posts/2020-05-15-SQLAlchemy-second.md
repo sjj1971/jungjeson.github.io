@@ -15,6 +15,8 @@ engine = create_engine("sqlite:///../Resources/dow.sqlite")
 Base = automap_base()
 # Use the Base class to reflect the database tables
 Base.prepare(engine, reflect=True)
+# check class using base
+Base.classes.keys()
 # Assign the dow class to a variable called `Dow`
 Dow = Base.classes.dow
 # Create a session
