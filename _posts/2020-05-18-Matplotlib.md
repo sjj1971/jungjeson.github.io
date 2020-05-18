@@ -25,8 +25,10 @@ plt.savefix("../Images/plot.png")
 plt.show()
 ```
 ## Tick
+```python
 tick_locations=[value for value in x_axis]
 plt.xticks(tick_locations, [l_0,..., l_n], rotation="vertical")
+```
 ## Bar chart
 ```python
 plt.bar(x_axis, y_axis, color="r", alpha = 0.5, align="center")
