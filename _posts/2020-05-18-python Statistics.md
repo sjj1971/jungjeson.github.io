@@ -18,6 +18,10 @@ plt.boxplot(temperatures)
 ```python
 sample = pd_dataframe.samle(N)
 ```
+```python
+# normal continuous random variables, loc=position of mean, 
+sample=stats.norm.rvs(loc=loc, size=200, random_state=42)
+```
 ## SEM with errorbar (The SEM is a measure of precision for an estimated population mean.)
 ```python
 sample_data = pd_dataframe.sample(N)
@@ -42,3 +46,21 @@ plt.scatter(x_values, y_values)
 plt.plot(x_values, regress_values, "r-")
 plt.annotate(line_eq, (x,y), fontsize=15, color="red")
 ```
+## 1sample T-test
+```python
+# assmuption : data is normally distributed, independent and randomly sampled.
+stats.ttest_1samp(sample, data.mean())
+#compare sample data, if pvalue is greater than 0.05, sample and data is not different in mean.
+```
+## ANOVA test (one-way ANOVA, NULL: 2 or more has same population mean)
+```python
+# ANOVA is to check whether any of the group element is significantly different than the rest.
+stats.f_oneway(group1, group2, group3, group4, group5)
+```
+## Chi square (Null: categorical data has the given frequencies)
+```python
+# degree of freadom = #groups - 1, q is confidence level(1 - pvalue)
+critical_value = st.chi2.ppf(q=0.95, df=degreeoffreedom)
+st.chisquare(observed, expected)
+# if the result is greater than critical value, result are statistically significant.
+# It means, the observed values are statistically different from expected values.
