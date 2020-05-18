@@ -50,7 +50,7 @@ pd_dataframe.plot(kind=" ", figsize=(20,3))
 ## Plot histogram on list or series
 ```python
 plt.hist(list_date[])
-
+```
 ## group chart
 ```python
 %matplotlib notebook
