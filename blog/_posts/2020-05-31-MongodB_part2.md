@@ -24,6 +24,4 @@ db.classroom.update_one({},{'$set':{}})
 db.classroom.update_one({},{'$push':{}})
 #delete a document
 db.classroom.delete_one({})
-studentsshow current db by running db
-db
 ```
