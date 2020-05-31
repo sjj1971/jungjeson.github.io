@@ -25,3 +25,17 @@ for x in range(1, 6):
         print(quote.text)
     browser.links.find_by_partial_text('Next')
 ```
+## Scraping with Pandas
+```python
+import pandas as pd
+url = 'https://en.wikipedia.org/wiki/List_of_capitals_in_the_United_States'
+tables = pd.read_html(url)
+tables #tables is list of panda frame
+df = tables[0]
+```
+```python
+# DataFrames as HTML
+html_table = df.to_html() #generating HTML tables from DataFrames
+html_table.replace('\n','')
+df.to_html('table.html') #or saving the table directly to a file
+```
