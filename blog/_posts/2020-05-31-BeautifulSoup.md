@@ -36,16 +36,18 @@ soup.body.find('p')
 soup.body.find_all('p')
 ```
 ```python
+#extract text of specific tag and class.
 results = soup.find_all('li',class='result-row')
 for result in results:
    try:
       title=result.find('a',class='result-title').text
       price=result.a.span.text
-      link=result.a['fref']
+      link=result.a['href']
    except AttributeError as e:
       print(e)
 ```
 ```python
+#extract text of specific tag and class.
 db= client.craigslist_db
 collection=db.items
 results = soup.find_all('li',class='result-row')
@@ -53,7 +55,7 @@ for result in results:
    try:
       title=result.find('a',class='result-title').text
       price=result.a.span.text
-      link=result.a['fref']
+      link=result.a['href']
       post = {
          'title':title,
          'price':price,
