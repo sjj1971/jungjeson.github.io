@@ -34,6 +34,8 @@ db.destinations.insertMany([{},...])
 #find data
 db.destinations.find().pretty()
 db.destinations.find({"continent":"Africa"})
+db.destinations.find({"age":{$gt:25,$lt:40}})
+db.destinations.find({"hobies":{$size:3}})
 ```
 ```python
 #update data
@@ -58,3 +60,5 @@ db.destinations.drop()
 #drop a db
 db.dropDatabase()
 ```
+
+### https://docs.mongodb.com/manual/tutorial/query-arrays/
