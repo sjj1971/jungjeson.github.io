@@ -22,6 +22,10 @@ db.classroom.insert_one({})
 #update a document
 db.classroom.update_one({},{'$set':{}})
 db.classroom.update_one({},{'$push':{}})
+```
+```python
+#delete a field from a document
+db.classroom.update_one({},{'$unset':{'row':""}})
 #delete a document
 db.classroom.delete_one({})
 ```
