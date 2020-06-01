@@ -19,6 +19,7 @@ classroom = db.classroom.find()
 ```python
 #insert a document into the classroom collection
 db.classroom.insert_one({})
+db.classroom.insert_many([{},...])
 #update a document
 db.classroom.update_one({},{'$set':{}})
 db.classroom.update_one({},{'$push':{}})
