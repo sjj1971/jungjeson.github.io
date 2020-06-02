@@ -23,15 +23,25 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../data.html">Data</a></li>
-            <li><a href="../comparison.html">Comparison</a></li>
+            <li><a href="../data.html">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                <span class="glyphicon-class">Data</span></a>
+            </li>                
+            <li><a href="../comparison.html">
+                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                <span class="glyphicon-class">Comparison</span></a>
+            </li>
+            <li><a href="../linregression.html">
+                <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                <span class="glyphicon-class">Lin. Regression</span></a>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="./temp1.html">Temp1</a></li>
-                <li><a href="./temp2.html">Temp2</a></li>
-                <li><a href="./temp3.html">Temp3</a></li>
-                <li><a href="./temp4.html">Temp4</a></li>
+                <li><a href="./temp1.html">Max Temperature</a></li>
+                <li><a href="./temp2.html">Humidity</a></li>
+                <li><a href="./temp3.html">Cloudiness</a></li>
+                <li><a href="./temp4.html">Wind Speed</a></li>
               </ul>
             </li>
           </ul>
@@ -45,11 +55,24 @@
         <hr>
         <figure>
             <img class="visual_img"src="../Resources/assets/images/Fig1.png">
-            <figcaption>
-               <em>Figure for Temperature vs...</em>
-            </figcaption>
         </figure>
-        <p>As expected, the weather becomes......</p>
+        <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+        <p class="bg-info">When checking liner regression, we found maximum temperature and latitude has strong negative correlation in northern hemisphere.</p>
+        <ul>
+           <li>
+           <strong><em>R square value</em></strong> is <strong><em>0.73</em></strong></li>
+           <li>Linear Regression equation is <strong><em>y = 1.03x + 96.37</em></strong></li>
+        </ul>
+        <p class="bg-info"> But, in south hemisphere, maximum temperature and latitude has moderate or little weak positive correlation.</p>
+        <ul>
+           <li><strong><em>R square value</em></strong> is <strong><em>0.46</em></strong></li>
+           <li>Linear Regression equation is <strong><em>y = 0.7x + 86.42</em></strong></li>
+        </ul>
+        <div class="row">
+            <div class="colcol-md-6 col-xs-6"><img class="visual_img"src="../Resources/assets/images/Fig5.png"></div>
+            <div class="colcol-md-6 col-xs-6"><img class="visual_img"src="../Resources/assets/images/Fig6.png"></div>
+        </div>
+        <p class="bg-info">You can check other figures for linear regression in the menu. or by <a href="../linregression.html">push this link</a></p>
     </article>
     <visual-body>
           <h1 class="title_style">Visualization</h1>
