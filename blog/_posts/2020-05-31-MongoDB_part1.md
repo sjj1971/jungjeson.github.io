@@ -69,5 +69,6 @@ db.inventory.find( { dim_cm: {$gt:15}, dim_cm:{lt:20} } )
 db.inventory.find( { dim_cm: {$gt:15, $lt:20} } )
 # And condition : show data satisfy dim_cm>22 and dim_cm<30
 db.inventory.find( { dim_cm: { $elemMatch: { $gt: 22, $lt: 30 } } } )
-
+```
 ### https://docs.mongodb.com/manual/tutorial/query-arrays/
+### https://www.youtube.com/watch?v=pWbMrx5rVBE
