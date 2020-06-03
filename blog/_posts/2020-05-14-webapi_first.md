@@ -44,3 +44,6 @@ def justice_league_character(hero_name):
 if __name__ == "__main__":
     app.run(debug=True)
 ```
+### Reference
+https://flask.palletsprojects.com/en/1.1.x/
+https://flask.palletsprojects.com/en/0.12.x/quickstart/#a-minimal-application
