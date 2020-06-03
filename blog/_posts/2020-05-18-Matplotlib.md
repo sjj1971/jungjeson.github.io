@@ -76,3 +76,5 @@ ax1.set_ylabel()
 ax1.boxplot(list or series)
 plt.show()
 ```
+###reference
+observablehq.com - Gallery : https://observablehq.com/@d3/gallery
