@@ -96,3 +96,6 @@ data.column_name2 = XXX
 # check metadata of the table
 Base.metadata.tables
 ```
+## Reference : 
+1. Introduction to SQLAlchemy : https://www.youtube.com/watch?v=woKYyhLCcnU
+2. Essential SQLAlchemy Book : http://shop.oreilly.com/product/0636920035800.do
