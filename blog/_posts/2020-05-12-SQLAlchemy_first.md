@@ -99,3 +99,5 @@ Base.metadata.tables
 ## Reference : 
 1. Introduction to SQLAlchemy : https://www.youtube.com/watch?v=woKYyhLCcnU
 2. Essential SQLAlchemy Book : http://shop.oreilly.com/product/0636920035800.do
+3. SQLAlchemy: https://pynash.org/2013/02/15/using-sqlalchemy-func-and-group/
+
