@@ -6,6 +6,7 @@ table{
 }
 body {
     background-color: burlywood;
+    
 }
 img:active {
   border: 1px solid red;
@@ -18,7 +19,9 @@ img:active {
     width: 1024px;
     height:100%;
     margin: auto;
-        }        
+    margin-top: 70px;
+        }
+
 article{
     background-color: linen;
     float:left;
