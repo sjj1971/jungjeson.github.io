@@ -67,3 +67,5 @@ for result in results:
 listings=db.items.find()
 for listing in listings:
    print(listing)
+```
+###Web Scraping with BeautifulSoup : https://www.dataquest.io/blog/web-scraping-tutorial-python/
