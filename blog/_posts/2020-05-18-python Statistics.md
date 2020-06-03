@@ -64,3 +64,7 @@ critical_value = st.chi2.ppf(q=0.95, df=degreeoffreedom)
 st.chisquare(observed, expected)
 # if the result is greater than critical value, result are statistically significant.
 # It means, the observed values are statistically different from expected values.
+```
+### Reference
+*args **kwargs : https://book.pythontips.com/en/latest/args_and_kwargs.html
+
