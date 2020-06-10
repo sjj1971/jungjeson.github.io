@@ -104,7 +104,7 @@ author:
       url: "mailto:sjj1971@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "sjj1971.github.io"
+      url: " "
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
