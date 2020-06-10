@@ -8,7 +8,7 @@ categories: programming
 ```html
 ### You Don't Know JS book series :
 <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a>
-link:https://github.com/getify/You-Dont-Know-JS
+link: https://github.com/getify/You-Dont-Know-JS
 ### JavaScript Tutorial: https://watchandcode.com/p/practical-javascript
 ### INteractive JaveScript Sheet: https://htmlcheatsheet.com/js/
 ### Scrimba Intro to JvaScript: https://scrimba.com/g/gintrotojavascript
