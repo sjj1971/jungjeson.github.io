@@ -47,3 +47,4 @@ url = base_url + "?t=" + search_keyword + "&apikey=" + api_key
 from pprint import pprint
 pprint(requests.get(url).json())
 ```
+### google place API
