@@ -1,3 +1,9 @@
+---
+title: "Finding System Port in use"
+date: 2020-06-10 14:00:00
+categories: windows
+---
+
 # Win10에서 사용중인 포트 확인하기
 
 원하는 포트를 다른 서비스에서 사용하는 경우 해당 포트를 사용하는 프로세스를 찾아야다. 
