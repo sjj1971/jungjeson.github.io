@@ -16,3 +16,8 @@ link: https://github.com/getify/You-Dont-Know-JS
 ### Scrimba Intro to JvaScript: https://scrimba.com/g/gintrotojavascript
 ### Plotly Getting Started with plotly : https://plotly.com/javascript/getting-started/
 ```
+
+
+```js
+students.forEach(printName);
+```
