@@ -18,6 +18,7 @@ link: https://github.com/getify/You-Dont-Know-JS
 ```
 
 ```js
+//forEach
 var students = ["Johnny", "Alice", "Mike"]
 students.forEach(printName); // it is same to call printName[i] for i in students list 
 students.forEach(function(item)){ // it is to use anonymous function without prior definition.
@@ -32,5 +33,9 @@ movie.rating = 6.5;
 if (rating in movie){
     console.log("movie has rating")
 };
-
+```
+```js
+//using map is like iterrow but using with return
+var mapSimpleArray = theStageOfJS.map(function(item, index) {
+    return `Stage $ {index+1} : $ {item}`
 ```
