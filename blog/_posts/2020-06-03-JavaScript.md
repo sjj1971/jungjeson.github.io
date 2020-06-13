@@ -20,9 +20,17 @@ link: https://github.com/getify/You-Dont-Know-JS
 ```js
 var students = ["Johnny", "Alice", "Mike"]
 students.forEach(printName); // it is same to call printName[i] for i in students list 
-students.forEach(function(item)){
+students.forEach(function(item)){ // it is to use anonymous function without prior definition.
    console.log(item)
 }
 ```
 ```js
+//Dictionary is Object in JS
+Object.keys(movie);
+Object.values(movie);
+movie.rating = 6.5;
+if (rating in movie){
+    console.log("movie has rating")
+};
+
 ```
