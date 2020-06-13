@@ -26,9 +26,23 @@ students.forEach(function(item)){ // it is to use anonymous function without pri
 }
 ```
 ```js
+//Anonymous function simplification
+(item) => { return item;}
+(item) => item;
+var mapSimpleArray = theStageOfJS.map(
+    (item) => item;
+);
+
+var mapArrayWithIndex = theStageOfJS.map(
+(item, index)=> `Stage ${index}:${item}`
+);
+```
+
+```js
 //Dictionary is Object in JS
 Object.keys(movie);
 Object.values(movie);
+Object.entries(movie);
 movie.rating = 6.5;
 if (rating in movie){
     console.log("movie has rating")
@@ -38,4 +52,9 @@ if (rating in movie){
 //using map is like iterrow but using with return
 var mapSimpleArray = theStageOfJS.map(function(item, index) {
     return `Stage $ {index+1} : $ {item}`
+```
+```js
+Object.entries(userinfo).forEach(
+    ([key, value]) => console.log(`key is ${key} and value is ${value}`)
+);
 ```
