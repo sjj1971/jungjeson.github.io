@@ -17,7 +17,12 @@ link: https://github.com/getify/You-Dont-Know-JS
 ### Plotly Getting Started with plotly : https://plotly.com/javascript/getting-started/
 ```
 
-
 ```js
-students.forEach(printName);
+var students = ["Johnny", "Alice", "Mike"]
+students.forEach(printName); // it is same to call printName[i] for i in students list 
+students.forEach(function(item)){
+   console.log(item)
+}
+```
+```js
 ```
