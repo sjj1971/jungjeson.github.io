@@ -12,6 +12,11 @@ d3.selectAll("#text2").text()
 d3.select(".text1").html()
 ```
 ```js
+// select child class 
+var myLInkAnchor = d3.select(".my-link>a")
+myLinkAnchor.attr("href")
+myLink
+// selecting attribute
 //Anonymous function simplification
 (item) => { return item;}
 (item) => item;
