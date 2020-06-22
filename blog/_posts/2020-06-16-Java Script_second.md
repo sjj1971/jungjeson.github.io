@@ -8,44 +8,36 @@ categories: programming
 ```js
 //d3.select("class")
 d3.select(".text1").text("Time to change the text")
-d3.selectAll("#text2").text()
 d3.select(".text1").html()
 ```
 ```js
-// select child class 
-var myLInkAnchor = d3.select(".my-link>a")
-myLinkAnchor.attr("href")
-myLink
-// selecting attribute
-//Anonymous function simplification
-(item) => { return item;}
-(item) => item;
-var mapSimpleArray = theStageOfJS.map(
-    (item) => item;
-);
-
-var mapArrayWithIndex = theStageOfJS.map(
-(item, index)=> `Stage ${index}:${item}`
-);
-```
-
+//select all
+d3.selectAll('li').style('color','blue');
 ```js
-//Dictionary is Object in JS
-Object.keys(movie);
-Object.values(movie);
-Object.entries(movie);
-movie.rating = 6.5;
-if (rating in movie){
-    console.log("movie has rating")
-};
+// select child class and selecting attribute
+var myLInkAnchor = d3.select(".my-link > a")
+var myLinkAnchorAttribute = myLinkAnchor.attr("href")
+// setting attribute
+myLinkAnchor.attr("href","https://python.org");
 ```
 ```js
-//using map is like iterrow but using with return
-var mapSimpleArray = theStageOfJS.map(function(item, index) {
-    return `Stage $ {index+1} : $ {item}`
+//chaining
+d3.select(".my-link>a").attr("href", "https://nytimes.org").text("Now this is a link to the NYT");
 ```
 ```js
-Object.entries(userinfo).forEach(
-    ([key, value]) => console.log(`key is ${key} and value is ${value}`)
-);
+//create a new element
+var li1 = d3.select('ul').append('li');
+li1.text('A new Item has been added!);
+var li2 = d3.select('ul').append('li').text('Another new Item');
+```
+```js
+//Adding table
+var tbody = d3.select('tbody');
+data.forEach(function(weatherReport){
+    var row = tbody.append('tr');
+    Object.entries(wetherReport).forEach(function([key, value]){
+       var cell = row.append('td');
+       cell.text(value);
+    });
+});
 ```
