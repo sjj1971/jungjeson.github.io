@@ -28,3 +28,28 @@ function handleChange(event){
    console(inputText);
 }
 text.on("change",handleChange);
+```
+```js
+//this
+d3.selectAll('button').on('click',function(){
+     console.log(this);
+});
+d3.selectAll('li').on('click',function(){
+    var listItem = d3.select(this);
+    listItem.style("color","blue");
+    console.log(listItem.text());
+});
+```
+```js
+//Form
+var button = d3.select("button");
+var form = d3.select("#form");
+button.on("click",runEnter);
+form.on("submit",runEnter);
+function runEnter(){
+   d3.event.preventDefault();
+   var inputElement = d3.select("#example-form-input");
+   var inputValue = inputElement.property("value");
+   d3.select("h1>span").text(inputValue);
+}
+```
