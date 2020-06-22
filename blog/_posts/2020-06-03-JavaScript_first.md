@@ -49,12 +49,27 @@ if (rating in movie){
 };
 ```
 ```js
-//using map is like iterrow but using with return
+//using map is like enumerate in pythonerrow but using with return
 var mapSimpleArray = theStageOfJS.map(function(item, index) {
     return `Stage $ {index+1} : $ {item}`
 ```
 ```js
-Object.entries(userinfo).forEach(
-    ([key, value]) => console.log(`key is ${key} and value is ${value}`)
-);
+//handling array of objects
+var users = [{}, {}, {}]
+users.forEach(user =>{
+   console.log(user);
+   Object.entries(user).forEach([key, value] => console.log('key:${key} and value ${value}'));
+})
 ```
+```js
+//filter
+function selectYounger(person){
+    return person.age <30;
+}
+var youngSimpsons = simpsons.filter(selectYounger);
+```
+```js
+//filter simple version
+var youngSimpsons = simpsons.filter(person => person.age<30);
+```
+
