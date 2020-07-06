@@ -21,6 +21,12 @@ var myLinkAnchorAttribute = myLinkAnchor.attr("href")
 myLinkAnchor.attr("href","https://python.org");
 ```
 ```js
+d3.select("ul").selectAll("li").each(function(d,i){
+    console.log("element", this);
+    console.log("data", d);
+    console.log("index", i);
+});
+```js
 //chaining
 d3.select(".my-link>a").attr("href", "https://nytimes.org").text("Now this is a link to the NYT");
 ```
