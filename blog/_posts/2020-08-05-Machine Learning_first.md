@@ -36,9 +36,22 @@ mse=mean_squared_error(y_test,predictions)
 r2=r2_score(y_test,predictions)
 model.score(X_test, y_test)
 ```
+### plot the residual for training and testing data
+```python
+plt.scatter(model.predict(X_train), model.predict(X_train)-y_train, c="blue", label="Training Data")
+plt.scatter(model.predict(X_test), model.predict(X_test)-y_test, c="red", label="Test Data")
+plt.legend()
+plt.hlines(y=0, xmin=y.min(), xmax=y.max())
+plt.title("Residual Plot")
+```
 ### Multiple Linear Regression (Y_i = Bias_0 + Weight_1* Feature_1 + Weight_2 * Feature_2 + ... + Weight_p * Feature_p)
 ```python
 from sklearn.datasets import make_regression
 n_features = 3
 X,y = make_regression(n_samples = 30, n_features = n_features, n_informative = n_features, random_state = 42, noise=0.5, bias = 100.0)
+```
+```python
+foam=pd.read_csv("path")
+X=foam[["col1","col2"]]
+y=foam["col3"].values.reshape(-1,1)
 ```
