@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning - part2"
+title: "Machine Learning - part1"
 date: 2020-08-05 15:00:00
 categories: programming
 ---
