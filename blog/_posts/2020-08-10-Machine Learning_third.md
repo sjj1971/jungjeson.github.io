@@ -121,4 +121,16 @@ from sklearn.naive_bayes import GaussianNB
 clf = GaussianNB()
 clf.fit(trainingData, trainingScores)
 ```
-
+### Grid Search
+```python
+from sklearn.model_selection import GridSearchCV
+param_grid = {'C':[1,5,10,50],'gamma':[0.0001,0.0005,0.001,0.005]}
+grid = GridSearchCV(model,param_grid,verbose=3)
+grid.fit(X_train,y_train)
+print(grid.best_params_)
+print(grid.best_score_)
+predictions = grid.predict(X_test)
+from sklearn.metrics import classification_report
+print(classifictaion_report(y_test, predictions, target_names = ['blue','red']))
+```
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
