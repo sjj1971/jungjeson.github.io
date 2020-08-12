@@ -31,3 +31,4 @@ class Hot_days(MRJob):
 if __name__ == "__main__":
     Hot_days.run()
 ```
+https://mrjob.readthedocs.io/en/latest/guides/writing-mrjobs.html
